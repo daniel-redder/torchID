@@ -1,5 +1,7 @@
 # torchID
 A tool which allows for easy identification of leaf tensors along the backpropogation pass in PyTorch
+
+By: Daniel Redder
 ----
 
 Have you spent days trying to fix the ever so frustrating: 
