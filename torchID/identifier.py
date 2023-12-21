@@ -1,3 +1,8 @@
+"""
+Package: torchID
+Author: Daniel Redder
+"""
+
 from typing import List
 import sys
 import torch
