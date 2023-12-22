@@ -8,6 +8,7 @@ TODOS:
 - Test on non module instances (may require the use of `locals()` will be addressed soon
 - Add full method signatures
 
+----
 
 Have you spent days trying to fix the ever so frustrating: 
 ```py
