@@ -30,7 +30,7 @@ see [test_simple.ipynb](https://github.com/daniel-redder/torchID/blob/main/test_
 
 `identify_tensors( [tensor] )`: this approach finds tensors which are not parameters, but are leaves in the computational graph. This works by searching `sys.modules` i.e. it **searches all references defined in all loaded modules**.  To mitigate the overhead this includes a `limited_system_search` parameter which looks for whether a specific variable exists in each module before checking it for the tensor. 
 
-see [test_approximate.ipynb](https://github.com/daniel-redder/torchID/blob/main/test_approximation.ipynb) for a example.
+see [test_approximate.ipynb](https://github.com/daniel-redder/torchID/blob/main/test_approximation.ipynb)https://github.com/daniel-redder/torchID/blob/main/test_approximation.ipynb for a example.
 
 We decided to use reference searching rather than a "monkey patching" (wrapping all tensors so they save a name on initialization) approach because "monkey patching" makes it more difficult to work with state dictionaries, and thus breaks our goal of **identifying tensors leaves in arbitrary "mostly" unmodified packages**, here mostly meaning the minimal ammount possible. 
 
