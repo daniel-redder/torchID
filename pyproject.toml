@@ -1,0 +1,22 @@
+[project]
+name = "torchid"
+version = "0.2.0"
+description = "A utility to identify PyTorch tensors in computational graphs by tracing grad_fn and scanning system memory."
+readme = "README.md"
+requires-python = ">=3.12"
+license = {text = "MIT"}
+authors = [
+    {name = "Daniel Redder"},
+]
+keywords = ["pytorch", "debugging", "computational-graph"]
+dependencies = [
+    "torch==2.6.0",
+    "termcolor>=2.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/torchID"
+
+# Explicitly tell setuptools to include the single python module if it's not in a src/ folder
+[tool.setuptools]
+py-modules = ["torchid"]
